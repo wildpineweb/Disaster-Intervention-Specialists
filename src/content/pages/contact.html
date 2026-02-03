@@ -1,6 +1,6 @@
 ---
-title: "Contact | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "Contact | Disaster Intervention Specialists"
+description: "Contact us page for Disaster Intervention Specialists"
 permalink: "/contact/"
 ---
 
@@ -8,8 +8,8 @@ permalink: "/contact/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -20,30 +20,30 @@ permalink: "/contact/"
 
     <div id="banner-310">
         <div class="cs-container">
-            <span class="cs-int-title">Contact Us</span>
+                <h1><span class="cs-int-title">Contact Us</span></h1>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
                 <a href="/contact/" class="cs-link cs-active">Contact Us</a>
             </div>
         </div>
         <!--Background Image-->
+
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/interior-pages-hero.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
-
     <!-- ============================================ -->
     <!--                Contact Form                  -->
     <!-- ============================================ -->
@@ -55,7 +55,7 @@ permalink: "/contact/"
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        We're here to help you every step of the way. Whether you have a question, need immediate assistance, or just want to learn more about our services, we're here to support you.
                     </p>
                 </div>
                 <form id="cs-form-265" name="Contact Form" method="post">
@@ -93,7 +93,6 @@ permalink: "/contact/"
                 <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{ client.address.mapLink }}">
                     {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }}
                 </a>

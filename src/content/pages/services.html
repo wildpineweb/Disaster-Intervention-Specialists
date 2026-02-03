@@ -1,0 +1,242 @@
+---
+title: "Services | Disaster Intervention Specialists"
+description: "Disaster Intervention Specialists provides a wide range of services to help you recover from a disaster. We are a full-service disaster intervention company that can help you with everything from disaster recovery to disaster preparedness."
+permalink: "/services/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 576, height: 640 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+                <span class="cs-int-title">Services</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link cs-active">Services</a>
+            </div>
+        </div>
+        <!--Background Image-->
+
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-pages-hero.jpeg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/interior-pages-hero.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-102">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/service-emergency-response-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/service-emergency-response.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/service-emergency-response.webp" alt="Emergency Response & Stabilization" width="500" height="552" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Service</span>
+            <h2 class="cs-title">Emergency Response & Stabilization</h2>
+            <p class="cs-text">
+                Our emergency response and stabilization services are designed to protect your property and belongings during a disaster. We provide a 24/7 emergency response team that is ready to respond to your needs.
+            </p>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    24/7 emergency onsite response
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Board-up services (windows, doors, roof openings)
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Tarping and temporary weatherproofing
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Site security & access control
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Coordination with first responders
+                </li>
+            </ul>
+            <a class="cs-button-solid" aria-label="contact us" href="/contact/">Contact Us</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--              Side By Side Reverse            -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-102">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/service-client-support-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/service-client-support.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/service-client-support.webp" alt="Client Support & Coordination" width="500" height="552" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Service</span>
+            <h2 class="cs-title">Client Support & Coordination</h2>
+            <p class="cs-text">
+                Our client support and coordination services ensure a smooth and stress-free restoration process. We provide clear guidance, thorough documentation, and seamless coordination with insurers to keep your recovery on track.
+            </p>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Walkthroughs with home/business owners
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Documentation of damages (photos, inventory, reports)
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Liaison with insurance adjusters
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Scope-of-work recommendations
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Transparent communication throughout restoration
+                </li>
+            </ul>
+            <a class="cs-button-solid" aria-label="contact us" href="/contact/">Contact Us</a>
+        </div>
+    </div>
+</section>
+              
+<!-- ============================================ -->
+<!--              Side By Side Triplet            -->
+<!-- ============================================ -->
+
+<section id="RTsbst-102">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/service-pack-out-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/service-pack-out.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/service-pack-out.webp" alt="Pack-Out & Contents Services" width="500" height="552" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Service</span>
+            <h2 class="cs-title">Pack-Out & Contents Services</h2>
+            <p class="cs-text">
+                Our comprehensive pack-out and contents services are designed to protect, restore, and return your belongings to pre-loss condition. From assessment to final unpacking, we handle every detail with care and precision.
+            </p>
+            <h3>Contents Protection</h3>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Pack-out assessment and documentation
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Item-by-item inventory with digital tracking
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Protection of fragile, valuable, or sentimental items
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Packing, labeling, and transportation of contents
+                </li>
+            </ul>
+            <h3>Cleaning & Restoration of Contents</h3>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Smoke, soot, and odor removal
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Fabric and textile laundering coordination
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Electronics stabilization and restoration coordination
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Document drying and recovery
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Mold-affected item cleaning (as allowed by regulations)
+                </li>
+            </ul>
+            <h3>Storage Solutions</h3>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Climate-controlled, secure storage
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Short- and long-term storage options
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Contents storage for high-value items
+                </li>
+            </ul>
+            <h3>Pack-Back Services</h3>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Delivery of all restored contents
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Room-by-room unpacking
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Furniture reassembly and placement
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                    Final inventory reconciliation
+                </li>
+            </ul>
+            <a class="cs-button-solid" aria-label="contact us" href="/contact/">Contact Us</a>
+        </div>
+    </div>
+</section>
+                                
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
